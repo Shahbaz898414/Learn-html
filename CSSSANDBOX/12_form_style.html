@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling of form </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+<style>
+    * {
+        /* -may want to add "border-box for " border-sizing so padding does not effect width-reset margin and padding  */
+        box-sizing :border-box;
+        margin:0;
+        padding:0;
+    }
+    body {
+        /*-background color is #334a72- */
+        font-family: 'Langar', cursive;
+        background:#334a72;
+        line-height: 1.8;
+    }
+    a {
+        /* underline link are ugly */
+        text-decoration:none;
+    }
+    #container {
+        margin: 30px auto;
+        padding:40px;
+        max-width: 400px;
+    }
+    .form-warp {
+        background-color: #fff;
+        padding:15px 25px;
+        
+    }
+    .form-warp h1,
+    .form-warp p {
+        text-align: center;
+    }
+    .form-wrap .form-group {
+        /* each label , input is wrappedin .form-group */
+        margin-top:10px;
+
+    }
+    .form-warp .form-group label {
+        /* label should be turned into a block element */
+        display:block;
+        color: #333
+
+    }
+    .form-warp .form-group input {
+        width:100%;
+        padding:5px;
+        border: #ddd 1px solid;
+        border-radius:5px;
+
+    }
+    .form-warp button {
+        /* buttom should be wrap accross 100% and display as a block and background color for button is #49c1a2  */
+        display:block;
+        width:100%;
+        padding:10px;
+        margin-top:10px;
+        background:#49c1a2 ;
+        color:#fff;
+        cursor:pointer;
+    }
+    .form-warp button:hover {
+        background:red;
+    }
+    .form-warp .buttom-text {
+        margin:20px;
+        font-size: 13px;
+    }
+    footer {
+        text-align: center;
+        margin:10px;
+    }
+    footer a  {
+        color:#49c1a2;
+
+
+    }
+
+
+
+</style>
+
+   </head>
+<body> 
+    <div id="container">
+       <div class="form-warp">
+           <h1>Sign Up</h1>
+           <p>It is free and only takes a minute </p>
+           <form action="">
+               <div class="form-group">
+           <label for="first-name">First Name</label>
+          <input type="text" name="firstname" id="firstname">
+        </div>
+        <div class="form-group">
+            <label for="Last-name">Last Name</label>
+            <input type="text " name ="lastname" id="lastname" >
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="Email" id="email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="text " name="password" id="pasword">
+        </div>
+        <div class="form-group">
+            <label for="possword2">confirm password</label>
+            <input type="text" name ="password2" id="password2">
+        </div>
+        
+        <button type="sumit" class="btn">Sign Up</button>
+        <br>
+        <p class="bottom-text">By clicking  the sign up button  , you are agree to  our<a href="#">term & condition</a> <a href="#"> privacy policy</a></p>
+
+        </form>    
+       </div> 
+       <footer>
+           <p>already have a account? <a href="#">login here </a></p>
+       </footer>
+    </div>
+</body>
+</html>

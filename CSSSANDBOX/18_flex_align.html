@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex align</title>
+    <style>
+        .container {
+            background:#555;
+        display:flex;
+        flex-wrap:wrap;
+        /* Align items horizontal */
+        justify-content:space-evenly;
+        /* OPTIONS:
+         flex-start
+         flex end
+         space between
+         space around
+         space evenly
+         center */
+         height:600px;
+         /* align items vertical (must be height) */
+         align-items:baseline;
+         
+         /* OPTIOS:
+        flex-start
+         flex end
+         center
+         baseline
+         stretch
+         */
+         /* align where there extra space this is for more than one row */
+         align-content:flex-start;
+         /* OPTION:
+         flex-start
+         flex end
+         space betwwen
+         space around
+         center
+         STRETCH
+          */
+
+        }
+
+        #item-2 h3 {
+            /* align single item vertical */
+            align-self: center;
+            /* PTIOS:
+        flex-start
+         flex end
+         center
+         baseline
+         stretch
+          */
+          order: 3;
+        }
+
+        .item  {
+            background:#f4f4f4;
+            border:#ddd solid 1px;
+            padding:1rem;
+            text-align:center;
+            margin:0.5rem;
+            /* flex:1; */
+            /* flex-basic= width */
+            flex-basis:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="item "><h3>item 1</h3></div>
+    <div class="item " id="item-2"><h3>item 2</h3></div>
+    <div class="item "><h3>item 3</h3></div>    
+
+</div>
+</body>
+</html>

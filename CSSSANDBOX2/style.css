@@ -1,0 +1,55 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 100px;
+  position: relative;
+}
+
+.box{
+  padding:3rem;
+  margin:0.8rem;
+}
+
+.box1 {
+   position: absolute;
+  background-color: brown;  
+
+  left: 20px;
+  top: 20px;
+  
+
+}
+
+.box2 {
+  position: absolute;
+  background-color: rebeccapurple;
+  left: 40px;
+  top: 40px;  
+}
+
+.box3 {
+  position: absolute;
+  background-color: red; 
+  left: 80px;
+  top: 80px;  
+}
+
+.box4 {
+  position: absolute;
+  background-color: yellow; 
+  left: 60px;
+  top: 60px;  
+}
+
+.box5 {
+  position: absolute;
+  background-color: pink;  
+
+  left: 100px;
+  top: 100px; 
+  z-index: -1;
+}

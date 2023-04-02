@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> float and align </title>
+
+    <style>
+        /* ### most important part of float is  new thing is box-sizing:border- box */
+        * {
+            box-sizing:border-box;
+        }
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            line-height: 1.6em; 
+            color:white;      
+            
+        }
+         
+        /* important part of CSS  center of web page  max-width */
+        .container {
+            max-width: 960px;
+            margin:auto;
+        }
+        .clr {
+            clear:both;
+        }
+        .box {
+            background:#333;
+            padding:20px;
+            margin-bottom:20px;
+            border:4px solid red;
+        }
+        .box p {
+            /* text alige,this thing we can use for header  */
+            text-align: left;
+            text-align:right;
+            text-align:center;
+            text-align:justify;
+            /* floting effect */
+        }
+        .box h2 {
+            text-align:center;
+        }
+        #box-2 {
+            float:left;
+            width:67%;
+        }
+        #box-3 {
+            float:right;
+            width:30%;
+            padding:8px;
+     }
+     /* new thing of clearing */
+     #box p {
+         clear: both;
+     }
+        .three {
+            clear:both;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+          <!-- first section of body   --> 
+     <div id="box-1" class="box">
+        <h2>Heading </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatem error expedita pariatur, corporis minus enim debitis nemo aliquid iste blanditiis. Illum atque ut at nobis voluptatum quia reiciendis cum a dolorum placeat expedita sint repellendus, quidem, blanditiis commodi! Omnis voluptas vel, tempore illo debitis laboriosam aperiam molestias? Aliquid adipisci totam dolorem at, similique quia labore repellat porro ex obcaecati dolorum consequatur? Voluptatum molestias rerum reprehenderit porro, voluptates sed excepturi consectetur et ad maxime placeat. Veritatis unde libero excepturi quidem voluptate ipsa qui exercitationem. Minima quam consequatur sit dolorem odio culpa at voluptas? Quas, minus labore sequi aut laborum cupiditate.</p>
+
+    </div>
+    
+      <!-- second section of body -->
+      <div id="box-2" class="box">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatem error expedita pariatur, corporis minus enim debitis nemo aliquid iste blanditiis. Illum atque ut at nobis voluptatum quia reiciendis cum a dolorum placeat expedita sint repellendus, quidem, blanditiis commodi! Omnis voluptas vel, tempore illo debitis laboriosam aperiam molestias? Aliquid adipisci totam dolorem at, similique quia labore repellat porro ex obcaecati dolorum consequatur? Voluptatum molestias rerum reprehenderit porro, voluptates sed excepturi consectetur et ad maxime placeat. Veritatis unde libero excepturi quidem voluptate ipsa qui exercitationem. Minima quam consequatur sit dolorem odio culpa at voluptas? Quas, minus labore sequi aut laborum cupiditate.</p>
+
+    </div> 
+     <!-- three section of body -->
+     <div id="box-3" class="box">
+        <h2>Heading</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatem error expedita pariatur, corporis minus enim debitis nemo aliquid iste blanditiis. Illum atque ut at nobis voluptatum quia reiciendis cum a dolorum placeat expedita sint repellendus, quidem, blanditiis commodi! Omnis voluptas vel, tempore illo debitis laboriosam aperiam molestias.</p>
+
+    </div> 
+
+    <div class="clr">
+
+
+    <!-- four section of body -->
+    <div id="box-4" class="box">
+        <h2>Heading</h2>
+        <p class="three">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatem error expedita pariatur, corporis minus enim debitis nemo aliquid iste blanditiis. Illum atque ut at nobis voluptatum quia reiciendis cum a dolorum placeat expedita sint repellendus, quidem, blanditiis commodi! Omnis voluptas vel, tempore illo debitis laboriosam aperiam molestias.</p>
+
+    </div> 
+   </div>
+    
+    </div>
+    
+</body>
+</html>

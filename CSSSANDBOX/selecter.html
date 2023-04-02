@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector </title>
+    <style>
+    /* styling of body this is calles as a element selector */
+    body {
+        background-color: #333;
+    }
+        /* . is for classes */
+        h2.green-heading {
+            color:green;
+        }
+        /* # is for id */
+        /*nasted selector is that when you put code like this #welcome p that statement   */
+        #welcome  {
+            background-color: orange;
+            border:4px solid red;     
+            font-size: 40px;   
+        }
+    /* multiple selector  is that you put welcome id this section of coding after the , then the out is work both of it  that is a proparity of selector */
+    #About {
+        border: 4px solid red;
+        padding: 4px;
+        margin-bottom: 30px;
+        background-color: orange;
+        font-size: 20px ;
+    }
+    p#first {
+        color: red;
+        font-size: 20px;
+    }
+    </style>
+</head> 
+<body>
+    <div id="welcome">
+    <h2  class="green-heading">welcome</h2>
+    <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque quis inventore hic ratione voluptas adipisci est quidem, dolorum voluptatum id.</p>
+    </div>
+<div id="About">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim officiis laborum soluta voluptatem cumque blanditiis eum alias vel repudiandae sunt quidem ad inventore expedita molestiae, dolor, cupiditate vero? Quaerat, mollitia.</p>
+</div>    
+</body>
+</html>
